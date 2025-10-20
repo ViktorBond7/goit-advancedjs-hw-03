@@ -19,9 +19,11 @@ const lightbox = new SimpleLightbox('.gallery a', {
 
 const onFormSearchSubmit = e => {
   e.preventDefault();
-  refs.loader.style.display = 'block';
   const inputValue = e.target.elements.search.value;
 
+  if (!inputValue) return;
+
+  refs.loader.style.display = 'block';
   fetchImages(inputValue)
     .then(res => {
       if (!res.hits.length) {
