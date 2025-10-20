@@ -9,8 +9,8 @@ const BASE_PARAMS = {
 };
 
 export const fetchImages = query => {
-  const q = query.trim();
-  if (!q) throw new Error('Query is empty');
+  const q = (query ?? '').trim();
+  // if (!q) throw new Error('Query is empty');
 
   const param = new URLSearchParams({ ...BASE_PARAMS, q });
   const url = `${BASE_URL}?${param.toString()}`;
