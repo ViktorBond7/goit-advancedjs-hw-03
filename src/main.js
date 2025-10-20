@@ -1,8 +1,8 @@
 import iziToast from 'izitoast';
 import SimpleLightbox from 'simplelightbox';
 
-import { fetchImages } from './js/pixabay';
-import { createCard } from './js/render-imgs';
+import { fetchImages } from './js/pixabay-api';
+import { createCard } from './js/render-functions';
 
 const refs = {
   listImg: document.querySelector('.gallery'),
