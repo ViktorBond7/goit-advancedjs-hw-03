@@ -4,17 +4,19 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/goit-advancedjs-hw-03/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
+    <title>Search images</title>
     <script type="module" crossorigin src="/goit-advancedjs-hw-03/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/goit-advancedjs-hw-03/assets/index-DCUvmVr2.css">
+    <link rel="modulepreload" crossorigin href="/goit-advancedjs-hw-03/assets/vendor-B07T6_gy.js">
+    <link rel="stylesheet" crossorigin href="/goit-advancedjs-hw-03/assets/index-bxl-a33w.css">
   </head>
   <body>
     <main>
       <form class="form">
-        <input name="data" placeholder="Search images..." />
+        <input type="text" name="search" placeholder="Search images..." />
         <button class="btn-search">Search</button>
       </form>
-      <ul class="list-img"></ul>
+      <ul class="gallery"></ul>
+      <span class="loader"></span>
     </main>
   </body>
 </html>
