@@ -33,6 +33,7 @@ const onFormSearchSubmit = e => {
           position: 'topRight',
         });
         refs.listImg.innerHTML = '';
+        refs.formSearch.reset();
         return;
       }
 
